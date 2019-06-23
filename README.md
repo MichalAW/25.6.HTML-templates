@@ -3,3 +3,5 @@
 
 
 repo --> https://github.com/MichalAW/25.6.Szablony-HTML.git
+
+site --> https://michalaw.github.io/25.6.Szablony-HTML/
