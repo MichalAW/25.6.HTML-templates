@@ -8,6 +8,13 @@ app.use('/store', function (req, res, next) {
     next();
 });
 
+app.get('/dynamic-view', function (req, res) {
+    res.render('dynamic', {
+        name: "My dynamic site",
+        url: "http://www.google.com"
+    });
+});
+
 app.get('/', function (req, res) {
     res.send('Hello world!');
 });
