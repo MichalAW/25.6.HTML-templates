@@ -8,23 +8,15 @@ app.use('/store', function (req, res, next) {
     next();
 });
 
-app.get('/dynamic-view', function (req, res) {
-    res.render('dynamic', {
-        name: "My dynamic site",
+app.get('/login', function (req, res) {
+    res.render('login', {
+        name: "login to google",
         url: "http://www.google.com"
     });
 });
 
 app.get('/', function (req, res) {
     res.send('Hello world!');
-});
-
-app.get('/store', function (req, res) {
-    res.send('This is a store');
-});
-
-app.get('/first-template', function (req, res) {
-    res.render('first-template');
 });
 
 app.listen(3000);
