@@ -8,15 +8,11 @@ app.use('/store', function (req, res, next) {
     next();
 });
 
-app.get('/login', function (req, res) {
+app.get('/', function (req, res) {
     res.render('login', {
         name: "login to google",
         url: "http://www.google.com"
     });
-});
-
-app.get('/', function (req, res) {
-    res.send('Hello world!');
 });
 
 app.listen(3000);
